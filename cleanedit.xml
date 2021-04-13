@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_CLEANEDIT</name>
+	<author>Brian Teeman</author>
+	<creationDate>2021-04-14</creationDate>
+	<copyright>(C) Brian Teeman</copyright>
+	<license>GNU General Public License version 3</license>
+	<authorEmail>brian@teeman.net</authorEmail>
+	<authorUrl>www.learnjoomla4.com</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_CLEANEDIT_XML_DESCRIPTION</description>
+
+	<files>
+		<file plugin="cleanedit">cleanedit.php</file>
+		<folder>language</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">plg_system_cleanedit.ini</language>
+		<language tag="en-GB">plg_system_cleanedit.sys.ini</language>
+	</languages>
+
+	<updateservers>
+		<server type="extension" priority="1" name="Clean Edit Plugin Update Site">https://raw.githubusercontent.com/brianteeman/btvideo/master/manifest.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="editmode"
+					type="radio"
+					layout="joomla.form.field.radio.switcher"
+					label="PLG_SYSTEM_CLEANEDIT_MODE_LABEL"
+					default="1"
+					filter="integer"
+					>
+					<option value="0">PLG_SYSTEM_CLEANEDIT_TEMPLATE</option>
+					<option value="1">PLG_SYSTEM_CLEANEDIT_FULL</option>
+				</field>
+				<field
+					name="edittemplateid"
+					type="templatestyle"
+					label="PLG_SYSTEM_CLEANEDIT_EDIT_STYLE_ID_LABEL"
+					client="site"
+					>
+					<option value="">JOPTION_USE_DEFAULT</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
