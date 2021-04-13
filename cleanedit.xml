@@ -20,7 +20,7 @@
 	</languages>
 
 	<updateservers>
-		<server type="extension" priority="1" name="Clean Edit Plugin Update Site">https://raw.githubusercontent.com/brianteeman/btvideo/master/manifest.xml</server>
+		<server type="extension" priority="1" name="Clean Edit Plugin Update Site">https://raw.githubusercontent.com/brianteeman/cleanedit/update/manifest.xml</server>
 	</updateservers>
 
 	<config>
