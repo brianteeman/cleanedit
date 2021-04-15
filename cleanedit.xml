@@ -7,12 +7,11 @@
 	<license>GNU General Public License version 3</license>
 	<authorEmail>brian@teeman.net</authorEmail>
 	<authorUrl>www.learnjoomla4.com</authorUrl>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>PLG_SYSTEM_CLEANEDIT_XML_DESCRIPTION</description>
 
 	<files>
 		<file plugin="cleanedit">cleanedit.php</file>
-		<folder>language</folder>
 	</files>
 	<languages folder="language">
 		<language tag="en-GB">plg_system_cleanedit.ini</language>
