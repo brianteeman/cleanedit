@@ -9,13 +9,14 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Factory;
+use Joomla\CMS\Plugin\CMSPlugin;
 
 /**
  * Clean Edit Plugin by Brian Teeman
  *
  * @since  1.0.0
  */
-class plgSystemCleanedit extends JPlugin
+class plgSystemCleanedit extends CMSPlugin
 {
 	/**
 	 * Application object.
@@ -51,7 +52,7 @@ class plgSystemCleanedit extends JPlugin
 		$tid        = $this->params->get('edittemplateid', 0);
 		$mode       = $this->params->get('editmode', 0);
 
-		if ($option == 'com_content' && $layout == 'edit' && $aid > 0)
+		if ($option === 'com_content' && $layout === 'edit' && $aid > 0)
 		{
 			$app->input->set('templateStyle', $tid);
 			if ($mode == 1)
