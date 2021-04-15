@@ -21,7 +21,7 @@ class plgSystemCleanedit extends CMSPlugin
 	/**
 	 * Application object.
 	 *
-	 * @var    JApplicationCms
+	 * @var    \Joomla\CMS\Application\CMSApplication
 	 * @since  1.0.0
 	 */
 	protected $app;
@@ -43,21 +43,21 @@ class plgSystemCleanedit extends CMSPlugin
 	 */
 
 	function onAfterRoute() {
-		$app        = Factory::getApplication();
-		$controller = $app->input->getCmd('controller', '');
-		$option     = $app->input->getCmd('option', '');
-		$aid        = $app->input->getCmd('a_id', 0);
-		$id         = $app->input->getCmd('id', 0);
-		$layout     = $app->input->getCmd('layout', '');
-		$tid        = $this->params->get('edittemplateid', 0);
-		$mode       = $this->params->get('editmode', 0);
+		$input      = $this->app->input;
+		$controller = $input->getCmd('controller', '');
+		$option     = $input->getCmd('option', '');
+		$aid        = (int) $input->getInt('a_id', 0);
+		$id         = (int) $input->getInt('id', 0);
+		$layout     = $input->getCmd('layout', '');
+		$tid        = (int) $this->params->getInt('edittemplateid', 0);
+		$mode       = (boolean) $this->params->getBoolean('editmode', false);
 
 		if ($option === 'com_content' && $layout === 'edit' && $aid > 0)
 		{
-			$app->input->set('templateStyle', $tid);
-			if ($mode == 1)
+			$input->set('templateStyle', $tid);
+			if ($mode)
 			{
-				$app->input->set('tmpl', 'component');
+				$input->set('tmpl', 'component');
 			}
 		}
 	}
