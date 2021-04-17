@@ -49,8 +49,8 @@ class plgSystemCleanedit extends CMSPlugin
 		$aid        = (int) $input->getInt('a_id', 0);
 		$id         = (int) $input->getInt('id', 0);
 		$layout     = $input->getCmd('layout', '');
-		$tid        = (int) $this->params->getInt('edittemplateid', 0);
-		$mode       = (boolean) $this->params->getBool('editmode', false);
+		$tid        = (int) $this->params->get('edittemplateid', 0);
+		$mode       = (boolean) $this->params->get('editmode', false);
 
 		if ($option === 'com_content' && $layout === 'edit' && $aid > 0)
 		{
