@@ -14,8 +14,8 @@
 		<file plugin="cleanedit">cleanedit.php</file>
 	</files>
 	<languages folder="language">
-		<language tag="en-GB">plg_system_cleanedit.ini</language>
-		<language tag="en-GB">plg_system_cleanedit.sys.ini</language>
+		<language tag="en-GB">en-GB/plg_system_cleanedit.ini</language>
+		<language tag="en-GB">en-GB/plg_system_cleanedit.sys.ini</language>
 	</languages>
 
 	<updateservers>
