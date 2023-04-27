@@ -11,3 +11,6 @@ Open the Edit Article page in full screen mode with just the form.
 
 ### Option 2 - Template
 Use a specific template when editing content. This could for example be clean of all modules.
+
+## Demo Video
+https://youtu.be/X_2ZTjEX93I
