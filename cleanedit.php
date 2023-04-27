@@ -8,7 +8,6 @@
 
 defined('_JEXEC') or die;
 
-use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\CMSPlugin;
 
 /**
@@ -44,10 +43,8 @@ class plgSystemCleanedit extends CMSPlugin
 
 	function onAfterRoute() {
 		$input      = $this->app->input;
-		$controller = $input->getCmd('controller', '');
 		$option     = $input->getCmd('option', '');
 		$aid        = (int) $input->getInt('a_id', 0);
-		$id         = (int) $input->getInt('id', 0);
 		$layout     = $input->getCmd('layout', '');
 		$tid        = (int) $this->params->get('edittemplateid', 0);
 		$mode       = (boolean) $this->params->get('editmode', false);
