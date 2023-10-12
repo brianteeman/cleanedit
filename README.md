@@ -1,5 +1,5 @@
-# Clean Edit for Joomla 4
-A system plugin to make editing content in the front end of your Joomla 4 website distraction free.
+# Clean Edit for Joomla
+A system plugin to make editing content in the front end of your Joomla website distraction free.
 
 ![CLEAN (7)](https://user-images.githubusercontent.com/1296369/205490612-45f38c4b-3527-4d9e-869f-54964cc28aa0.png)
 
