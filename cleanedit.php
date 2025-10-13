@@ -64,7 +64,7 @@ class plgSystemCleanedit extends CMSPlugin
 			if ($mode) {
 				$input->set('tmpl', 'component');
 			}
-		}	
+		}
 	}
 }
 
