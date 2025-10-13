@@ -48,6 +48,7 @@ class plgSystemCleanedit extends CMSPlugin
 		$layout     = $input->getCmd('layout', '');
 		$tid        = (int) $this->params->get('edittemplateid', 0);
 		$mode       = (boolean) $this->params->get('editmode', false);
+		$view       = $input->getCmd('view', '');
 
 		if ($option === 'com_content' && $layout === 'edit' && $aid > 0)
 		{
@@ -57,6 +58,13 @@ class plgSystemCleanedit extends CMSPlugin
 				$input->set('tmpl', 'component');
 			}
 		}
+
+		if ($option === 'com_config' && $view === 'modules') {
+			$input->set('templateStyle', $tid);
+			if ($mode) {
+				$input->set('tmpl', 'component');
+			}
+		}	
 	}
 }
 
