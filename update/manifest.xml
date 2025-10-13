@@ -7,9 +7,9 @@
 		<type>plugin</type>
 		<folder>system</folder>
 		<client>site</client>
-		<version>1.0.5</version>
+		<version>1.1.0</version>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/brianteeman/cleanedit/releases/download/105/plg_system_cleanedit.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/brianteeman/cleanedit/releases/download/110/plg_system_cleanedit.zip</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
@@ -19,7 +19,7 @@
 		</infourl>
 		<maintainer>Brian Teeman</maintainer>
 		<maintainerurl>https://brian.teeman.net</maintainerurl>
-		<targetplatform name="joomla" version="4.[01234]|5.[01234]"/>
-		<sha256>2DF87A3BA0F93F2D664E4B7FE80714920EF43E5547F8FE948A660A5311F8256C</sha256>
+		<targetplatform name="joomla" version="4.[01234]|5.[01234]|6.[01234]"/>
+		<sha256>05175128C6EF9A40C4D15038A240C64C60EA1DBE34E623C542DDEFB162EA8F9E</sha256>
 	</update>
 </updates>
